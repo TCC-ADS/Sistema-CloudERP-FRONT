@@ -1,0 +1,232 @@
+.navbar {
+    height: 7%;
+    background-color: #777777;
+    padding: 1%;
+}
+.container-menu {
+    height:  35%;
+
+}
+#login{
+  width: 0%;
+  height: 0%;
+}
+.gif-login{
+  vertical-align: middle;
+  float: left;
+}
+.menu {
+    display: inline-block;
+    list-style: none;
+  }
+  
+  .menu > li {
+    float: left;
+    color: #777777;
+    width: 140px;
+    height: 35px;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .sub-menu {
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+    list-style: none;
+    background-color: #E5EBF6;
+  }
+  
+  *.sub-menu li {
+    font-size: 14px;
+    padding: 8px 0;
+    color: #777777;
+    border-bottom: 1px solid rgba(255,255,255, 0.2);
+    /*display: none;*/
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .sub-menu li:last-child {
+    border-bottom: 0;
+  }
+  
+  
+  .sub-menu li:hover {
+    color: #ff43a3;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 3px solid #ff43a3;
+  }
+  
+  
+  .menu > li:hover .sub-menu li{
+    /*display: block;*/
+    transform: scale(1);
+  }
+  
+  
+  .menu > li:hover .sub-menu {
+    transform: scale(1);
+  }
+  
+.navbar img{
+    margin: 0;
+    margin-left: 40%;
+    float: right;
+}
+.btn-primary{
+  color: #777777;
+  background-color: rgba(0,0,0, 0);
+  border-color: #E5EBF6;
+}
+.li btn-primary:hover{
+  background-color: #E5EBF6;
+} 
+.logo{
+    width: 7%;
+}
+a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, #343a40;
+    font-size: 135%;
+}
+.Prod {
+  display: block;
+  width: 55%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.15rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  float: left;
+  margin-right: 8px!important
+}
+.Quant {
+  display: block;
+  width: 30%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.15rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.fim1 {
+  position: absolute;
+  top: 87%;
+  right: 124px;
+  margin: 0px;
+  padding: 9px;
+}
+.fim2 {
+  position: absolute;
+  top: 87%;
+  right: 30px;
+  margin: 0px;
+  padding: 9px;
+}
+.icone-search {
+  position: relative;
+  height: 32px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.icon-mais-novo {
+  position: relative;
+  height: 32px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.frmdpg {
+  background: url("https://img.icons8.com/color/48/000000/bank-cards.png") no-repeat !important;
+  display: block;
+  width: 72%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.15rem 0.5rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffff !important;
+  background-color: #218838 !important;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-display: left !important;
+}
+
+.busca {
+  width: 65%;
+  float: right;
+}
+.busca input {
+  background-image: url(../img/search.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  padding: 12px;
+  width: 180px;
+  margin-top: 10px;
+  background-position: 95%;
+  border: 1px solid #d6d6d6
+}
+table {
+  margin-right:auto;
+  margin-left:auto;
+  width: 75%;
+
+}
+.one-line {
+  background-color: #dee2e6;
+}
+.formulario h3 {
+
+  float: left;
+  font-size: 15px;
+}
+.busca-city {
+  text-align: center;
+  width: 82%;
+  float: left;
+}
+.busca-city input {
+  background-image: url(../img/search.png);
+  background-repeat: no-repeat;
+  height: 36px;
+  padding: 12px;
+  width: 190px;
+  margin-top: 10px;
+  background-position: 96%;
+  border: 1px solid #d6d6d6;
+}
+.finaliza-Cad {
+  text-align: center;
+  width: 160%;
+
+}
+.busca-estoque {
+  width: 98%;
+  float: right;
+}
+.busca-estoque input{
+  background-image: url(../img/search.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  padding: 12px;
+  width: 30%;
+  margin-top: 10px;
+  background-position: 95%;
+  border: 1px solid #d6d6d6;
+}

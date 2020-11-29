@@ -1,0 +1,14 @@
+.busca-estoque input{
+background-image: url(../img/search.png);
+background-repeat: no-repeat;
+height: 30px;
+padding: 12px;
+width: 30%;
+margin-top: 10px;
+background-position: 95%;
+border: 1px solid #d6d6d6;
+}
+.busca-estoque {
+width: 98%;
+float: right;
+}

@@ -1,0 +1,216 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="./css/venda.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!--Menu-->
+    <div class="w3-teal">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="menu">
+                <li><a><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModaVenda"
+                            data-whatever="@mdo">Venda</button></a></li>
+                <li><a>Cadastro</a>
+                    <ul class="sub-menu">
+                        <li><a href="./cliente.html">Cliente</a></li>
+                        <li><a href="./produto.html">Produto</a></li>
+                    </ul>
+                </li>
+                <li><a href="./estoque.html">Estoque</a></li>
+            </ul>
+            <a href="./venda.html"><img class="logo" src="./img/logo.png"></a>
+            <a href="./Login.html"><img class="logout" src="./img/sair.png"></a>
+        </nav>
+    </div>
+    <!--Fim Menu-->
+    <!--DashBoard
+    <div>
+        <section>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">CPU Traffic</span>
+                            <span class="info-box-number">
+                                10
+                                <small>%</small>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="info-box mb-3">
+                        <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-thumbs-up"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Likes</span>
+                            <span class="info-box-number">41,410</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix hidden-md-up"></div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="info-box mb-3">
+                        <span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Sales</span>
+                            <span class="info-box-number">760</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    Info acaba aqui
+                    </section>
+    </div>
+    Fim DashBoard-->
+    <!--Modal VENDA-->
+    <div class="col-100">
+        <div class="content texto-destaque">
+            <div class="col-3 bloco-texto" id="sale">
+                <img src="./img/sales.png" />
+                <h3><b>Veja mais informações sobe suas vendas</b> </h3>
+                <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting of the industry. Lorem
+                    Ipsum has been
+                </p>-->
+            </div>
+            <div class="col-3 bloco-texto" id="dashboard" style="margin-top: 6em; left: 14%;">
+                <img src="./img/dashboard.png" />
+                <h3><b>Tenha uma gestão mais precisa verficando seus gastos e lucro</b></h3>
+                <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting of the industry. Lorem
+                    Ipsum has been
+                </p>-->
+            </div>
+            <div class="col-3 bloco-texto" id="controle">
+                <img src="./img/clientehaver.png" />
+                <h3><b>Controle as compras de seus clientes</b></h3>
+                <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting of the industry. Lorem
+                    Ipsum has been
+                </p>-->
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <div class="modal fade" id="ModaVenda" tabindex="-1" role="dialog" aria-labelledby="ModaVendaLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ModaVendaLabel"><img class="logo" src="./img/logo.png"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-venda">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="input-text">Descrição</label>
+                                        <input type="text" class="form-control" id="input-venda">
+                                        <!--<button type="button" class="btn btn-warning"><i class="fa fa-search"
+                                                aria-hidden="true"></i></button></input>-->
+
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="input-text">Desc. Adicional</label>
+                                        <input type="text" class="form-control" id="input-venda">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Quantidade</label>
+                                        <input type="number" class="form-control" id="input-venda">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Valor Unitario</label>
+                                        <input class="form-control" id="input-venda">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Desconto</label>
+                                        <input class="form-control" id="input-venda">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Acrescimo</label>
+                                        <input class="form-control" id="input-venda">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationTooltip04">Forma de Pagamento</label>
+                                    <select class="custom-select" id="validationTooltip04" required>
+                                        <option>Dinheiro</option>
+                                        <option>Cartão</option>
+                                        <option>Cheque</option>
+                                    </select>
+                                    <div class="invalid-tooltip">
+                                        Selecione a forma de pagamento.
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th scope="col">Cod.</th>
+                                        <th scope="col">Desc.</th>
+                                        <th scope="col">Quant.</th>
+                                        <th scope="col">Valor</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Brinco</td>
+                                        <td>1</td>
+                                        <td>R$ 10,00</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Colar</td>
+                                        <td>1</td>
+                                        <td>R$ 10,00</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div>
+                                <label id="totalvenda">Total: 20,00</label>
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-warning fim1"><a href="./venda.html">Finalizar</a></button>
+                        <button type="button" href="" class="btn btn-warning fim2"><a
+                                href="./venda.html">Cancelar</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FIM Modal VENDA-->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

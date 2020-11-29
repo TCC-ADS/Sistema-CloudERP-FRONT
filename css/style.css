@@ -1,0 +1,76 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    }
+    ul {
+       padding: 0px!important; 
+    }
+    main, .content {
+    margin: 0 auto;
+    position: relative;
+    }
+
+    .col-100 {
+        width: 92%;
+        left: 4%;
+        position: absolute;
+        top: 19%;
+    }
+    .texto-destaque {
+        text-align: center;
+    }
+    .texto-destaque strong {
+        color: #646464;
+    }
+    .texto-destaque h1 {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-family: 'Quicksand', sans-serif;
+        color: #818181;
+    }
+    .texto-destaque p {
+        font-size: 15px;
+        font-family: 'Quicksand', sans-serif;
+        color: #9a9a9a;
+    }
+    
+    .col-3 {
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        padding-left: 15px;
+        padding-right: 15px; 
+        width: 29%;
+        float: left;
+        position: relative;
+    }
+    .bloco-imagem img {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+   
+    .bloco-texto {
+        margin-top: 2em;
+    }
+    
+    .bloco-texto>img{
+        width: 88%;
+        opacity: 0.7;
+    }
+    h3 {
+        font-weight: normal!important;
+    }
+    #sale{
+        float: left!important;
+    }
+
+    #dashboard{
+        float: center!important;
+    }
+    
+    #controle{
+        float: right!important;
+    }
+
+    

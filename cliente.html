@@ -1,0 +1,194 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Projeto</title>
+</head>
+
+<body>
+    <!--Menu-->
+    <div class="w3-teal">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="menu">
+                <li><a href="./venda.html">Venda</a></li>
+                <li><a>Cadastro</a>
+                    <ul class="sub-menu">
+                        <li><a href="./cliente.html">Cliente</a></li>
+                        <li><a href="./produto.html">Produto</a></li>
+                    </ul>
+                </li>
+                <li><a href="./estoque.html">Estoque</a></li>
+            </ul>
+            <a href="./venda.html"><img class="logo" src="./img/logo.png"></a>
+            <a href="./Login.html"><img class="logout" src="./img/sair.png"></a>
+        </nav>
+    </div>
+    <!--Fim Menu-->
+    <div class="centro">
+        <h3>Cadastro Cliente</h3>
+        <div class="formulario">
+            <table>
+                <form>
+                    <tr class="one-line">
+                        <td>
+                            <div class="busca-estoque">
+                                <label> Pesquisar Cliente:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                        </td>
+                    </tr>
+            </table>
+            <table class="table">
+                <tr>
+                    <td>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationCustom01">CPF</label>
+                            <input type="number" class="form-control" id="validationCustom01"
+                                placeholder="Somente números" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationCustom02">RG</label>
+                            <input type="number" class="form-control" id="validationCustom02"
+                                placeholder="Somente números" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationCustom01">Nome</label>
+                            <input type="text" class="form-control" id="validationCustom03" placeholder="Primeiro nome"
+                                required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationCustom02">Sobrenome</label>
+                            <input type="text" class="form-control" id="validationCustom04" placeholder="Ultimo nome"
+                                required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <div class="form-row">
+                        <td>
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">Cidade</label>
+                                <div class="busca-city">
+                                    <input type="text" class="form-control" id="validationCustom05">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">Estado</label>
+                                <select id="validationCustom06" class="form-control">
+                                    <option selected>Selecione...</option>
+                                    <option>Acre-AC</option>
+                                    <option>Alagoas-AL</option>
+                                    <option>Amapá-AP</option>
+                                    <option>Amazonas-AM</option>
+                                    <option>Bahia-BA</option>
+                                    <option>Ceará-CE</option>
+                                    <option>Espírito Santo-ES</option>
+                                    <option>Goiás-GO</option>
+                                    <option>Maranhão-MA</option>
+                                    <option>Mato Grosso-MT</option>
+                                    <option>Mato Grosso do Sul-MS</option>
+                                    <option>Minas Gerais-MG</option>
+                                    <option>Pará-PA</option>
+                                    <option>Paraíba-PB</option>
+                                    <option>Paraná-PR</option>
+                                    <option>Pernambuco-PE</option>
+                                    <option>Piauí-PI</option>
+                                    <option>Rio de Janeiro-RJ</option>
+                                    <option>Rio Grande do Norte-RN</option>
+                                    <option>Rio Grande do Sul-RS</option>
+                                    <option>Rondônia-RO</option>
+                                    <option>Roraima-RR</option>
+                                    <option>Santa Catarina-SC</option>
+                                    <option>São Paulo-SP</option>
+                                    <option>Sergipe-SE</option>
+                                    <option>Tocantins-TO</option>
+                                    <option>Distrito Federal-DF</option>
+                                </select>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationCustom01">Endereço</label>
+                            <input type="text" class="form-control" id="validationCustom07" placeholder="Rua" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationCustom01">Bairo</label>
+                            <input type="text" class="form-control" id="validationCustom08" placeholder="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationCustom01">Nº</label>
+                            <input type="number" class="form-control" id="validationCustom09" placeholder="Ex: 108"
+                                required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group col-md-2">
+                            <label for="Telephone">Telefone</label>
+                            <input type="number" class="form-control" id="validationCustom10">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group finaliza-Cad">
+                            <button type="submit" class="btn btn-success" id="btnSalvar">Salvar</button>
+                            <button type="submit" class="btn btn-success" id="btnCancelar">Cancelar</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/AutentificaçãoCli.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

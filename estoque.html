@@ -1,0 +1,247 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/estoque.css">
+    <link rel="stylesheet" href="./css/Venda.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Projeto</title>
+</head>
+
+<body>
+    <!--Menu-->
+    <div class="w3-teal">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="menu">
+                <li><a href="./venda.html">
+                        Venda</a>
+                </li>
+                <li><a>Cadastro</a>
+                    <ul class="sub-menu">
+                        <li><a href="./cliente.html">Cliente</a></li>
+                        <li><a href="./produto.html">Produto</a></li>
+                    </ul>
+                </li>
+                <li><a href="./estoque.html">Estoque</a></li>
+            </ul>
+            <a href="./venda.html"><img class="logo" src="./img/logo.png"></a>
+            <a href="./Login.html"><img class="logout" src="./img/sair.png"></a>
+        </nav>
+    </div>
+    <!--Fim Menu-->
+    <div class="centro">
+        <h3> Estoque</h3>
+        <div class="formulario">
+            <table>
+                <form>
+                    <tr class="one-line">
+                        <td>
+                            <div class="busca-estoque">
+                                <label> Pesquisar Produto:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                        </td>
+                    </tr>
+            </table>
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Cod.</th>
+                        <th scope="col">Desc.</th>
+                        <th scope="col">Quant.</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Alteração</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Brinco</td>
+                        <td>1</td>
+                        <td>R$ 10,00</td>
+                        <td>
+                            <button type="submit" class="btn btn-danger'">Alterar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Colar</td>
+                        <td>5</td>
+                        <td>R$ 10,00</td>
+                        <td>
+                            <button type="submit" class="btn btn-danger'">Alterar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Relogio</td>
+                        <td>3</td>
+                        <td>R$ 10,00</td>
+                        <td>
+                            <button type="submit" class="btn btn-danger'">Alterar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Pulseira</td>
+                        <td>1</td>
+                        <td>R$ 10,00</td>
+                        <td>
+                            <button type="submit" class="btn btn-danger'">Alterar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Tornozeleira</td>
+                        <td>5</td>
+                        <td>R$ 10,00</td>
+                        <td>
+                            <button type="submit" class="btn btn-danger'">Alterar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Anel</td>
+                        <td>3</td>
+                        <td>R$ 10,00</td>
+                        <td>
+                            <button type="submit" class="btn btn-danger'">Alterar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <tr>
+                <td>
+                    <div class="form-group finaliza-Cad">
+                        <button type="submit" class="btn btn-dark">Salvar</button>
+                        <button type="submit" class="btn btn-dark">Cancelar</button>
+                    </div>
+                </td>
+            </tr>
+            </form>
+        </div>
+        <!--Modal VENDA-->
+        <div class="w3-container">
+            <div class="modal fade" id="ModaVenda" tabindex="-1" role="dialog" aria-labelledby="ModaVendaLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ModaVendaLabel"><img class="logo" src="./img/logo.png"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-venda">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="input-text">Descrição</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                            <!--<button type="button" class="btn btn-warning"><i class="fa fa-search"
+                                                aria-hidden="true"></i></button></input>-->
+
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="input-text">Desc. Adicional</label>
+                                            <input type="text" class="form-control" id="input-text">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label>Quantidade</label>
+                                            <input type="number" class="form-control" id="number">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label>Valor Unitario</label>
+                                            <input class="form-control" id="number">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label>Desconto</label>
+                                            <input class="form-control" id="number">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label>Acrescimo</label>
+                                            <input class="form-control" id="number">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="validationTooltip04">Forma de Pagamento</label>
+                                        <select class="custom-select" id="validationTooltip04" required>
+                                            <option>Dinheiro</option>
+                                            <option>Cartão</option>
+                                            <option>Cheque</option>
+                                        </select>
+                                        <div class="invalid-tooltip">
+                                            Selecione a forma de pagamento.
+                                        </div>
+                                    </div>
+                                </div>
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">Cod.</th>
+                                            <th scope="col">Desc.</th>
+                                            <th scope="col">Quant.</th>
+                                            <th scope="col">Valor</th>
+                                            <th scope="col">Alteração</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Brinco</td>
+                                            <td>1</td>
+                                            <td>R$ 10,00</td>
+                                            <td>
+                                                <button type="submit" class="btn btn-danger'">Alterar</button>
+                                            </td>
+                                            <td>
+                                                <label class="form-check-label" for="exampleCheck1">Ativo</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Colar</td>
+                                            <td>1</td>
+                                            <td>R$ 10,00</td>
+                                            <td>
+                                                <button type="submit" class="btn btn-danger'">Alterar</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div>
+                                    <label id="totalvenda">Total: 20,00</label>
+                                </div>
+                            </form>
+                            <button type="button" class="btn btn-warning fim1"><a
+                                    href="./venda.html">Finalizar</a></button>
+                            <button type="button" href="" class="btn btn-warning fim2"><a
+                                    href="./venda.html">Cancelar</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--FIM Modal VENDA-->
+        </div>
+        <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

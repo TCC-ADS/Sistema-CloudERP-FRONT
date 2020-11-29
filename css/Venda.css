@@ -1,0 +1,70 @@
+.body{
+  background-image: url("/img/logo.png");
+  width: 100%;
+}
+.modal-content{
+  height: 91%!important;
+}
+#inputVenda{
+  width: 100%!important;
+}
+.sidebar-menu>ul>li>a{
+  text-decoration: none!important;
+  font-size: 13px;
+}
+.sidebar-menu>ul>li>a>button{
+  font-size: 13px;
+}
+a:hover {
+  color: #ccc!important;
+}
+.sidebar-menu>ul>li>a:hover{
+    color: #ccc!important;
+}
+.sidebar-header{
+padding: 6px;
+line-height: 53px;
+text-align: center;
+}
+.user-pic{
+  border-radius: 5%;
+  border-color: #343a40;
+}
+
+.w3-teal, .w3-hover-teal:hover {
+  background-color: #777777!important;
+  color: #fff!important;
+}
+
+.btn-warning {
+  color: #fff!important;
+  background-color: #000!important;
+  border-color: #0000!important;
+}
+.fim1 {
+  position: absolute;
+  top: 87%;
+  right: 2%;
+  margin: 0px;
+  padding: 9px;
+}
+.fim2 {
+  position: absolute;
+  top: 87%;
+  right: 16%;
+  margin: 0px;
+  padding: 9px;
+  list-style: none;
+}
+.custom-select{
+  background-color: #ccc!important;
+  color: #343a40!important;
+}
+#input-venda{
+  font-size: 15px!important;
+  width: 99%!important;
+}
+.totalvenda{
+  text-align: right!important;
+  font-size: 23px!important;
+}
